@@ -1,0 +1,105 @@
+commit 4c1532ab77fb398646d733238471508b006d9cc6
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 22:09:12 2020 +0200
+
+    poistettu file1 ja uudelleennimetty file2 tiedostoksi file22
+
+ tiedostoja/file1  | 0
+ tiedostoja/file2  | 0
+ tiedostoja/file22 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit acfe45c974cc03850e6a57acf147dceec0eb69e1
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 22:06:11 2020 +0200
+
+    lisätty file1, file2 ja file3
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 4a03f2238cfa66e49352eb1edd0f319f9b91b7f4
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 21:58:10 2020 +0200
+
+    uudelleen nimetty tiedosto.txt tiedostoksi eka.txt
+
+ eka.txt      | 109 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ tiedosto.txt | 109 -----------------------------------------------------------
+ 2 files changed, 109 insertions(+), 109 deletions(-)
+
+commit 4b10a842ea82472ee0a269739b5cb5321c9295c0
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 21:56:55 2020 +0200
+
+    poistettu toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit e86fe7a1e23e46d5919ad7b4a22b401b37fa78cf
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 21:55:52 2020 +0200
+
+    poistettu osa tekstistä ja lisätty tekstiä tiedostossa tiedosto.txt
+
+ tiedosto.txt | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+commit 8b4ff5d30705657b89cd8cae2ef5a0b2c721b411
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 21:54:09 2020 +0200
+
+    lisätty paljon tekstiä tiedostoon tiedosto.txt
+
+ tiedosto.txt | 110 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 110 insertions(+)
+
+commit 1a5023d2e5875aa3fb42dcb486a6acfdcacd2a64
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 21:49:03 2020 +0200
+
+    stuff lisätty
+
+ ugly-file.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ccaa56df845331036d9c6cdd5df7bcd09ccf0ed0
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 21:48:06 2020 +0200
+
+    muutoksia toiseen ja kolmanteen
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 215d17815f17ff2df82ff66d47e07408cc242197
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 21:46:48 2020 +0200
+
+    kolmas lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7a1a9d56ecea2430ae25b640f8638821170744fa
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 21:45:33 2020 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 97cfdd154b4a348042067d7210ed9dbb8a1bca07
+Author: Vhiltsu <vhiltsu@pm.com>
+Date:   Tue Mar 17 21:44:05 2020 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
