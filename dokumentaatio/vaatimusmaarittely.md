@@ -48,4 +48,5 @@ Perusversiota voidaan jatkokehittää esimerkiksi seuraavilla ominaisuuksilla
 - lisää käyttäjätasoja
 - käyttäjäryhmät
 - käyttäjätunnuksen poisto
+
 ...
