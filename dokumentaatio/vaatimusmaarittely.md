@@ -10,7 +10,7 @@ Sovelluksessa tulevat olemaan normaalin tason käyttäjät perusoikeuksilla sek�
 
 ## Käyttöliittymäluonnos
 
-(tulossa)
+![Alustava käyttöliittymäluonnos](https://raw.githubusercontent.com/Vilthsu/ot-harjoitustyo/master/dokumentaatio/kuvat/ui-draft.png)
 
 ## Perusversion tarjoama toiminnallisuus
 
