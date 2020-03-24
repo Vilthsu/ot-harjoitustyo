@@ -10,6 +10,8 @@ Sovelluksessa tulevat olemaan normaalin tason käyttäjät perusoikeuksilla sek�
 
 ## Käyttöliittymäluonnos
 
+Tämä käyttöliittymäluonnos on pikaisesti toteutettu ensimmäinen luonnos. Kaikkea ei välttämättä ole kuvattu alla olevassa kuvassa.
+
 ![Alustava käyttöliittymäluonnos](https://raw.githubusercontent.com/Vilthsu/ot-harjoitustyo/master/dokumentaatio/kuvat/ui-draft.png)
 
 ## Perusversion tarjoama toiminnallisuus
