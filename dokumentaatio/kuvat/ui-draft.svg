@@ -1,0 +1,178 @@
+<svg width="544.82mm" height="381.87mm" version="1.1" viewBox="0 0 544.82 381.87" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="marker1695" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1483" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker6956" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker6892" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker6778" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker6458" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mend" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <g transform="translate(351.24 298.75)">
+  <g fill="#efefef" stroke="#000">
+   <path d="m-351.01-274.5v95.25h127v-95.25z" stroke-width=".45827"/>
+   <rect x="-340.43" y="-255.98" width="105.83" height="15.875" stroke-width=".52917"/>
+   <rect x="-340.43" y="-229.52" width="105.83" height="15.875" stroke-width=".52917"/>
+  </g>
+  <g>
+   <text x="-341.2601" y="-257.40958" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-341.2601" y="-257.40958" stroke-width=".26458">Käyttäjätunnus tai sähköposti</tspan></text>
+   <text x="-341.2601" y="-230.95123" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-341.2601" y="-230.95123" stroke-width=".26458">Salasana</tspan></text>
+   <rect x="-322.79" y="-205.71" width="70.556" height="10.583" fill="#efefef" stroke="#000" stroke-width=".35278"/>
+   <text x="-300.20697" y="-198.31516" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-300.20697" y="-198.31516" stroke-width=".26458">Kirjaudu</tspan></text>
+   <path d="m-63.5-298.31v174.62h248.71v-174.62z" fill="#efefef" stroke="#000" stroke-width=".86833"/>
+   <rect x="-60.854" y="-295.67" width="70.556" height="10.583" fill="#efefef" stroke="#000" stroke-width="1.0583"/>
+   <text x="-46.450897" y="-288.81366" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-46.450897" y="-288.81366" stroke-width=".26458">Omat projektit</tspan></text>
+   <rect x="14.111" y="-295.67" width="70.556" height="10.583" fill="#efefef" stroke="#000" stroke-width=".35278"/>
+   <text x="26.211649" y="-288.81366" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="26.211649" y="-288.81366" stroke-width=".26458">Selaa projekteja</tspan></text>
+   <rect x="127" y="-295.67" width="54.681" height="10.583" fill="#efefef" stroke="#000" stroke-width=".31056"/>
+   <text x="133.35968" y="-288.81366" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="133.35968" y="-288.81366" stroke-width=".26458">Kirjaudu ulos ›</tspan></text>
+   <rect x="-60.854" y="-279.79" width="169.33" height="150.81" fill="#efefef"/>
+  </g>
+  <g transform="translate(11.465)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Projekti 1</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Projektikuvaus 1</tspan></text>
+  </g>
+  <text x="79.612389" y="-263.91666" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="79.612389" y="-258.76706" stroke-width=".26458"/></text>
+  <g transform="translate(11.465 24.331)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Projekti 2</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Projektikuvaus 2</tspan></text>
+  </g>
+  <g transform="translate(11.465 48.143)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Projekti 3</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Projektikuvaus 3</tspan></text>
+  </g>
+  <g transform="translate(11.465 71.956)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Projekti 4</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Projektikuvaus 4</tspan></text>
+  </g>
+  <g transform="translate(11.465 95.768)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Projekti 5</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Projektikuvaus 5</tspan></text>
+  </g>
+  <g transform="translate(11.465 119.58)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Projekti 6</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Projektikuvaus 6</tspan></text>
+  </g>
+  <g>
+   <rect x="113.77" y="-279.79" width="58.208" height="150.81" fill="#efefef"/>
+   <rect x="116.42" y="-255.98" width="54.681" height="10.583" fill="#efefef" stroke="#000" stroke-width=".31056"/>
+   <text x="122.77634" y="-249.12617" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="122.77634" y="-249.12617" stroke-width=".26458">Eroa projektista</tspan></text>
+   <text x="115.44985" y="-265.12088" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="115.44985" y="-265.12088" stroke-width=".26458">Projektin toiminnot</tspan></text>
+   <rect x="116.42" y="-240.1" width="54.681" height="10.583" fill="#efefef" stroke="#000" stroke-width=".31056"/>
+   <text x="122.77634" y="-233.25117" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="122.77634" y="-233.25117" stroke-width=".26458">Tuhoa projekti</tspan></text>
+   <path d="m-55.562-91.938v174.62h248.71v-174.62z" fill="#efefef" stroke="#000" stroke-width=".86833"/>
+   <rect x="-53.269" y="-89.292" width="70.556" height="10.583" fill="#efefef" stroke="#000" stroke-width=".35278"/>
+   <text x="-38.513386" y="-82.438667" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-38.513386" y="-82.438667" stroke-width=".26458">Omat projektit</tspan></text>
+   <rect x="21.696" y="-89.292" width="70.556" height="10.583" fill="#efefef" stroke="#000" stroke-width="1.0583"/>
+   <text x="34.149162" y="-82.438667" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="34.149162" y="-82.438667" stroke-width=".26458">Selaa projekteja</tspan></text>
+   <rect x="134.94" y="-89.292" width="54.681" height="10.583" fill="#efefef" stroke="#000" stroke-width=".31056"/>
+   <text x="141.29718" y="-82.438667" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="141.29718" y="-82.438667" stroke-width=".26458">Kirjaudu ulos ›</tspan></text>
+   <rect x="-52.917" y="-73.417" width="169.33" height="150.81" fill="#efefef"/>
+  </g>
+  <g transform="translate(19.403 206.37)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Julkinen projekti 1</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Julkisen projektin kuvaus 1</tspan></text>
+  </g>
+  <g>
+   <rect x="121.71" y="-73.417" width="58.208" height="150.81" fill="#efefef"/>
+   <rect x="124.35" y="-49.604" width="54.681" height="10.583" fill="#efefef" stroke="#000" stroke-width=".31056"/>
+   <text x="131.31741" y="-42.751202" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="131.31741" y="-42.751202" stroke-width=".26458">Liity projektiin</tspan></text>
+   <text x="123.38736" y="-58.745892" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="123.38736" y="-58.745892" stroke-width=".26458">Projektin toiminnot</tspan></text>
+  </g>
+  <g transform="translate(19.403 230.71)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Julkinen projekti 2</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Julkisen projektin kuvaus 2</tspan></text>
+  </g>
+  <g transform="translate(19.403 254.52)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Julkinen projekti 3</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Julkisen projektin kuvaus 3</tspan></text>
+  </g>
+  <g transform="translate(19.403 278.33)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Julkinen projekti 4</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Julkisen projektin kuvaus 4</tspan></text>
+  </g>
+  <g transform="translate(19.403 302.14)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Julkinen projekti 5</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Julkisen projektin kuvaus 5</tspan></text>
+  </g>
+  <g transform="translate(19.403 325.96)">
+   <rect x="-66.984" y="-274.46" width="158.66" height="17.959" fill="#efefef" stroke="#000" stroke-width=".61638"/>
+   <text x="-63.843513" y="-268.00409" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-268.00409" stroke-width=".26458">Julkinen projekti 6</tspan></text>
+   <text x="-63.843513" y="-261.68195" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-63.843513" y="-261.68195" font-size="4.2333px" stroke-width=".26458">Julkisen projektin kuvaus 6</tspan></text>
+  </g>
+  <g>
+   <rect x="124.35" y="-33.729" width="54.681" height="10.583" fill="#efefef" stroke="#000" stroke-width=".31056"/>
+   <text x="130.71385" y="-26.876192" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="130.71385" y="-26.876192" stroke-width=".26458">Eroa projektista</tspan></text>
+   <text x="-312.04984" y="-185.086" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-312.04984" y="-185.086" stroke-width=".26458">Luo uusi käyttäjä</tspan></text>
+  </g>
+  <g transform="translate(0 69.453)">
+   <g transform="translate(11.465 66.146)">
+    <path d="m-215.19-274.5v185.21h127v-185.21z" fill="#efefef" stroke="#000" stroke-width=".63903"/>
+    <rect x="-204.61" y="-255.98" width="105.83" height="15.875" fill="#efefef" stroke="#000" stroke-width=".52917"/>
+    <text x="-205.4407" y="-257.40958" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-205.4407" y="-257.40958" stroke-width=".26458">Käyttäjätunnus</tspan></text>
+    <rect x="-186.97" y="-115.75" width="70.556" height="10.583" fill="#efefef" stroke="#000" stroke-width=".35278"/>
+    <text x="-169.30441" y="-108.35684" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-169.30441" y="-108.35684" stroke-width=".26458">Rekisteröidy</tspan></text>
+    <g transform="translate(0 24.474)">
+     <rect x="-204.61" y="-255.98" width="105.83" height="15.875" fill="#efefef" stroke="#000" stroke-width=".52917"/>
+     <text x="-205.4407" y="-257.40958" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-205.4407" y="-257.40958" stroke-width=".26458">Sähköpostiosoite (valinnainen)</tspan></text>
+    </g>
+    <g transform="translate(0 48.948)">
+     <rect x="-204.61" y="-255.98" width="105.83" height="15.875" fill="#efefef" stroke="#000" stroke-width=".52917"/>
+     <text x="-205.4407" y="-257.40958" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-205.4407" y="-257.40958" stroke-width=".26458">Etunimi (valinnainen)</tspan></text>
+    </g>
+    <g transform="translate(0 73.422)">
+     <rect x="-204.61" y="-255.98" width="105.83" height="15.875" fill="#efefef" stroke="#000" stroke-width=".52917"/>
+     <text x="-205.4407" y="-257.40958" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-205.4407" y="-257.40958" stroke-width=".26458">Sukunimi (valinnainen)</tspan></text>
+    </g>
+    <g transform="translate(0 97.896)">
+     <rect x="-204.61" y="-255.98" width="105.83" height="15.875" fill="#efefef" stroke="#000" stroke-width=".52917"/>
+     <text x="-205.4407" y="-257.40958" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-205.4407" y="-257.40958" stroke-width=".26458">Salasana, väh. 8 merkkiä</tspan></text>
+    </g>
+    <g transform="translate(0 121.71)">
+     <rect x="-204.61" y="-255.98" width="105.83" height="15.875" fill="#efefef" stroke="#000" stroke-width=".52917"/>
+     <text x="-205.4407" y="-257.40958" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-205.4407" y="-257.40958" stroke-width=".26458">Salasana uudelleen</tspan></text>
+    </g>
+   </g>
+   <text x="-165.13507" y="-30.644861" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-165.13507" y="-30.644861" font-family="sans-serif" stroke-width=".26458"><tspan font-style="italic">tai</tspan> <tspan>kirjaudu sisään</tspan></tspan></text>
+  </g>
+  <path d="m-267.23-277.15 193.15-18.521" fill="none" marker-end="url(#Arrow2Mend)" stroke="#000" stroke-width=".79375"/>
+  <text x="-169.09061" y="-293.62296" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-169.09061" y="-293.62296" stroke-width=".26458">Login OK</tspan></text>
+  <path d="m-288.4-173.96 71.438 42.333" fill="none" marker-end="url(#marker6458)" stroke="#000" stroke-width=".79375"/>
+  <text x="-262.07675" y="-160.3817" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-262.07675" y="-160.3817" stroke-width=".26458">Create a new user</tspan></text>
+  <path d="m-211.67-70.771-105.83-100.54" fill="none" marker-end="url(#marker6778)" stroke="#000" stroke-width=".79375"/>
+  <text x="-285.25797" y="-100.47178" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-285.25797" y="-100.47178">Back to login,</tspan><tspan x="-285.25797" y="-93.416222">OK</tspan></text>
+  <path d="m-58.208-97.229-158.75-153.46" fill="none" marker-end="url(#marker6892)" stroke="#000" stroke-width=".79375"/>
+  <text x="-153.45911" y="-195.05193" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-153.45911" y="-195.05193" stroke-width=".26458">Logout</tspan></text>
+  <path d="m-68.792-274.5-145.52 13.229" fill="none" marker-end="url(#marker6956)" stroke="#000" stroke-width=".79375"/>
+  <text x="-153.45911" y="-258.19113" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-153.45911" y="-258.19113" stroke-width=".26458">Logout</tspan></text>
+  <path d="m7.9375-121.04v23.812l1e-7 2.6458" fill="none" marker-end="url(#marker1483)" stroke="#000" stroke-width=".79375"/>
+  <text x="-39.808537" y="-111.16698" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-39.808537" y="-111.16698" stroke-width=".26458">Browse projects</tspan></text>
+  <text x="42.873756" y="-111.16698" fill="#000000" font-family="sans-serif" font-size="5.6444px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="42.873756" y="-111.16698" stroke-width=".26458">My projects</tspan></text>
+  <path d="m38.224-94.583v-26.458" fill="none" marker-end="url(#marker1695)" stroke="#000" stroke-width=".79375"/>
+ </g>
+</svg>
