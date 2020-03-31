@@ -7,9 +7,15 @@ public class ProjectManagerUI extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+    
+    @Override
+    public void init() throws Exception {
+      // TODO
+    }
+
 
     @Override
-    public void start(Stage stage) {
-        
+    public void start(Stage primaryStage) {
+        // TODO
     }
 }
