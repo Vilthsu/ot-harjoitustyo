@@ -1,16 +1,53 @@
 # Ohjelmistotekniikka, harjoitustyö
 
+Sovelluksen avulla käyttäjä voi etsiä projekteja, liittyä projekteihin ja luoda omia projekteja. Sovellusta on mahdollista laajentaa esimerkiksi tuntisyöttöön ja muihin vastaaviin ominaisuuksiin.
+
+Sovellus on Helsingin yliopiston Tietojenkäsittelytieteen kurssin Ohjelmistotekniikan menetelmät harjoitustyönä.
+
 ## Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 [Työaikakirjanpito](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-## Tehtävät
-### Viikko 1
-[gitlog.txt](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+## Releaset
 
-[komentorivi.txt](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+## Komentorivitoiminnot
+
+### Testaus
+
+Testit suoritetaan komennolla
+
+```
+mvn test
+```
+
+Testikattavuudesta generoidaan raportti komennolla.
+
+```
+mvn jacoco:report
+```
+
+Kattavuusraporttia voi tarkastella selaimella _target/site/jacoco/index.html_-tiedoston.
+
+### Suoritettavan jar-tiedoston generointi
+
+Komento
+
+```
+mvn package
+```
+
+Generoitu suoritettava jar-tiedosto _ProjectManager-1.0-SNAPSHOT.jar_ löytyy hakemistosta _target_.
+
+### JavaDoc
+
+```
+mvn javadoc:javadoc
+```
+
+JavaDocia voi tarkastella selaimella tiedoston _target/site/apidocs/index.html_ avulla.
+
 
 _Käytän pääasiassa Windows 10 Pro työasemaa aivan kaikessa (sekä opinnoissa että töissä ja omissa projekteissa). Ensimmäisen viikon tehtävät ovat tehty virtuaalikoneella, Ubuntu Desktop 16.04 LTS -käyttöjärjestelmällä, käyttäen komentoriviä PuTTY-ohjelmistolla._
 
