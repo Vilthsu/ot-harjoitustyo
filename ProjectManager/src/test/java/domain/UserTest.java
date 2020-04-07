@@ -114,6 +114,6 @@ public class UserTest {
         String name = "User name";
         user.setName(name);
         
-        assertTrue(user.toString().equals("User name [käyttäjä]"));
+        assertTrue(user.toString().equals(name + " [käyttäjä]"));
     }
 }
