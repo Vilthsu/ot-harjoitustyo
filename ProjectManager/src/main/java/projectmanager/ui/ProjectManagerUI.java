@@ -1,6 +1,8 @@
 package projectmanager.ui;
 
 import javafx.application.Application;
+import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.stage.Stage;
 
 public class ProjectManagerUI extends Application {
@@ -16,6 +18,8 @@ public class ProjectManagerUI extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        // TODO
+        primaryStage.setTitle("Project manager");
+        
+        primaryStage.show();
     }
 }
