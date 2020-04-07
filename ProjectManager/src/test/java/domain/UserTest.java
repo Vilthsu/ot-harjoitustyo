@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import projectmanager.domain.User;
+import projectmanager.utils.UserUtils;
 
 public class UserTest {
     
@@ -98,6 +99,14 @@ public class UserTest {
     @Test
     public void userLevelMustBeOne() {
         assertTrue(user.getLevel() == 1);
+    }
+    
+    @Test
+    public void friendlyUserLevelMustValid() {
+        String fromMap = UserUtils.userFriendlyLevels().get(user.getLevel());
+        String fromMethod = UserUtils.userFriendlyLevel(user);
+        
+        assertTrue(fromMap.equals(fromMethod));
     }
     
     @Test
