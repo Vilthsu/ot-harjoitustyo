@@ -1,7 +1,7 @@
 package projectmanager.domain;
 
 public class Language {
-    public String name;
+    public final String name;
     
     public Language(String name) {
         this.name = name;

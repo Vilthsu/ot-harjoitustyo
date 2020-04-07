@@ -2,6 +2,7 @@ package projectmanager.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import projectmanager.utils.StringUtils;
 
 public class Project {
     public final long created;
@@ -33,7 +34,11 @@ public class Project {
         return _name;
     }
 
-    public void setName(String name) {
+    public void setName(String name) throws IllegalArgumentException {
+        if (!StringUtils.checkLength(name, 5, 50)) {
+            throw new IllegalArgumentException("Projektin nimen tulee olla 5-50 merkkiä pitkä");
+        }
+        
         this._name = name;
     }
 
@@ -41,7 +46,11 @@ public class Project {
         return _description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(String description) throws IllegalArgumentException {
+        if (!StringUtils.checkMaxLength(description, 255)) {
+            throw new IllegalArgumentException("Projektin kuvauksen tulee olla korkeintaan 255 merkkiä pitkä");
+        }
+        
         this._description = description;
     }
     
