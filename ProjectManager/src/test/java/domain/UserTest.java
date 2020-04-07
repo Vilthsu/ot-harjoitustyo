@@ -3,6 +3,7 @@ package domain;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import projectmanager.domain.Project;
 import projectmanager.domain.User;
 import projectmanager.utils.UserUtils;
 
@@ -115,5 +116,51 @@ public class UserTest {
         user.setName(name);
         
         assertTrue(user.toString().equals(name + " [käyttäjä]"));
+    }
+    
+    @Test
+    public void usersAreEqual() {
+        String name = "User name";
+        
+        User user1 = new User(name);
+        User user2 = new User(name);
+        
+        assertTrue(user1.equals(user2));
+    }
+    
+    @Test
+    public void usersAreNotEqual() {
+        String name = "User name";
+        String name2 = "Käyttäjä";
+        
+        User user1 = new User(name);
+        User user2 = new User(name2);
+        
+        assertFalse(user2.equals(user1));
+    }
+    
+    @Test
+    public void usersAreNotEqualWhenAnotherUserIsNull() {
+        String name = "User name";
+        
+        User user1 = new User(name);
+        User user2 = null;
+        
+        assertNotEquals(user1, user2);
+    }
+    
+    @Test
+    public void usersAreNotEqualWhenAnotherUserIsNotUser() {
+        String name = "User name";
+        
+        User user1 = new User(name);
+        Object user2 = new Project();
+        
+        assertNotEquals(user1, user2);
+    }
+    
+    @Test
+    public void userHashCodeIsInteger() {
+        assertEquals(((Integer)user.hashCode()).getClass(), Integer.class);
     }
 }

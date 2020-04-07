@@ -1,36 +1,73 @@
 package domain;
 
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import projectmanager.domain.Language;
+import projectmanager.domain.User;
 
 public class LanguageTest {
     
-    public LanguageTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
+    private Language language;
     
     @Before
     public void setUp() {
+        language = new Language("Java");
     }
     
-    @After
-    public void tearDown() {
+    @Test
+    public void instanceIsNotNull() {
+        assertTrue(language != null);
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    
+    @Test
+    public void instanceHasName() {
+        assertTrue(language.name.equals("Java"));
+    }
+    
+    @Test
+    public void instancesAreEqual() {
+        String name = "Java";
+        
+        Language lang1 = new Language(name);
+        Language lang2 = new Language(name);
+        
+        assertTrue(lang1.equals(lang2));
+    }
+    
+    @Test
+    public void instancesAreNotEqual() {
+        String name = "Java";
+        String name2 = "C#";
+        
+        Language instance1 = new Language(name);
+        Language instance2 = new Language(name2);
+        
+        assertFalse(instance2.equals(instance1));
+    }
+    
+    @Test
+    public void instancesAreNotEqualWhenAnotherLanguageIsNull() {
+        String name = "Java";
+        
+        Language instance1 = new Language(name);
+        Language instance2 = null;
+        
+        assertNotEquals(instance1, instance2);
+    }
+    
+    @Test
+    public void instancesAreNotEqualWhenAnotherLanguageIsNotLanguage() {
+        String name = "Java";
+        
+        Language instance1 = new Language(name);
+        Object instance2 = new User();
+        
+        assertNotEquals(instance1, instance2);
+    }
+    
+    @Test
+    public void instanceHashCodeIsInteger() {
+        assertEquals(((Integer)language.hashCode()).getClass(), Integer.class);
+    }
 }

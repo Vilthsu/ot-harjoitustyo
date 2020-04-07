@@ -1,6 +1,7 @@
 package projectmanager.domain;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import projectmanager.utils.StringUtils;
 
@@ -11,12 +12,35 @@ public class Project {
     private String _name;
     private String _description;
     private final List<Language> _languages;
+
+    public Project() {
+        this.created = System.currentTimeMillis();
+        this.author = null;
+        
+        _languages = new ArrayList<>();
+    }
+    
+    public Project(User author) {
+        this.created = System.currentTimeMillis();
+        this.author = author;
+        
+        _languages = new ArrayList<>();
+    }
     
     public Project(String name, String description) {
         this._name = name;
         this._description = description;
         this.created = System.currentTimeMillis();
         this.author = null;
+        
+        _languages = new ArrayList<>();
+    }
+    
+    public Project(String name, String description, User author) {
+        this._name = name;
+        this._description = description;
+        this.created = System.currentTimeMillis();
+        this.author = author;
         
         _languages = new ArrayList<>();
     }
@@ -54,6 +78,10 @@ public class Project {
         this._description = description;
     }
     
+    public boolean hasLanguage(Language language) {
+        return _languages.contains(language);
+    }
+    
     public void addLanguage(Language language) {
         if (this.hasLanguage(language)) {
             return;
@@ -62,25 +90,35 @@ public class Project {
         _languages.add(language);
     }
     
-    public boolean hasLanguage(Language language) {
-        return _languages.contains(language);
-    }
-    
-    public Language getLanguage(String name) {
-        int index = _languages.indexOf(new Language(name));
-        
-        return this.getLanguage(index);
-    }
-    
-    public Language getLanguage(int index) {
-        return _languages.get(index);
-    }
-    
     public void removeLanguage(Language language) {
         if (!this.hasLanguage(language)) {
             return;
         }
         
         _languages.remove(language);
+    }
+
+    public List<Language> getLanguages() {
+        return _languages;
+    }
+
+    public void clearLanguages() {
+        _languages.clear();
+    }
+    
+    @Override
+    public String toString() {
+        String name = this.getName();
+        String desc = this.getDescription();
+        List<String> languages = new ArrayList<>();
+        
+        this.getLanguages().forEach((lang) -> {
+            languages.add(lang.name);
+        });
+        
+        String languageStr = String.join(", ", languages);
+        
+        return name + ", " + desc + ", tekijä: " + this.author.getName() + ", luotu: "
+                + new Date(created).toString() + ", kielet: " + languageStr;
     }
 }
