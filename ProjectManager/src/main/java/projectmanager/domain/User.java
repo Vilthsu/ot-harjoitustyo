@@ -1,5 +1,7 @@
 package projectmanager.domain;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import org.apache.commons.validator.EmailValidator;
 import projectmanager.utils.StringUtils;
@@ -9,26 +11,36 @@ public class User {
     private String _name;
     private String _email;
     private final int _level;
+    
+    public List<Project> projects;
 
     public User() {
         this._level = 1;
+        
+        projects = new ArrayList<>();
     }
 
     public User(String name) {
         this._name = name;
         this._level = 1;
+        
+        projects = new ArrayList<>();
     }
 
     public User(String name, String email) {
         this._name = name;
         this._email = email;
         this._level = 1;
+        
+        projects = new ArrayList<>();
     }
 
     public User(String name, String email, int level) {
         this._name = name;
         this._email = email;
         this._level = level;
+        
+        projects = new ArrayList<>();
     }
     
     public String getName() {
