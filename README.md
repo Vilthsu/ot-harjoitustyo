@@ -10,6 +10,8 @@ Sovellus on Helsingin yliopiston Tietojenkäsittelytieteen kurssin Ohjelmistotek
 
 [Vaatimusmäärittely](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
+[Testausdokumentti](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
+
 [Työaikakirjanpito](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 ## Releaset
