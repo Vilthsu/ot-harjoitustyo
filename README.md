@@ -15,6 +15,7 @@ Sovellus on Helsingin yliopiston Tietojenkäsittelytieteen kurssin Ohjelmistotek
 [Työaikakirjanpito](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 ## Releaset
+- [v0.1-alpha](https://github.com/Vilthsu/ot-harjoitustyo/releases/tag/v0.1-alpha) - Ensimmäinen vaadittu release viikolla viisi.
 
 ## Komentorivitoiminnot
 
