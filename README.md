@@ -6,7 +6,11 @@ Sovellus on Helsingin yliopiston Tietojenkäsittelytieteen kurssin Ohjelmistotek
 
 ## Dokumentaatio
 
+[Arkkitehtuurikuvaus](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuvaus.md)
+
 [Vaatimusmäärittely](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[Testausdokumentti](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 [Työaikakirjanpito](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
