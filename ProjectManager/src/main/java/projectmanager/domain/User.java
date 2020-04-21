@@ -48,6 +48,10 @@ public class User {
     }
 
     public void setName(String name) throws IllegalArgumentException {
+        if (name == null) {
+            throw new IllegalArgumentException("Käyttäjänimi ei voi olla tyhjä");
+        }
+        
         if (!StringUtils.checkLength(name, 5, 15)) {
             throw new IllegalArgumentException("Käyttäjänimen tulee olla 5-15 merkkiä pitkä");
         }
@@ -60,18 +64,22 @@ public class User {
     }
 
     public void setEmail(String email) throws IllegalArgumentException {
-        if (!StringUtils.checkLength(email, 5, 35)) {
+        boolean noEmail = email == null || email.trim().length() == 0;
+        
+        if (!noEmail && !StringUtils.checkLength(email, 5, 35)) {
             throw new IllegalArgumentException("Sähköpostiosoitteen tulee olla 5-35 merkkiä pitkä");
         }
         
-        email = StringUtils.trimString(email);
-        EmailValidator validator = EmailValidator.getInstance();
-        
-        if (!validator.isValid(email)) {
-            throw new IllegalArgumentException("Sähköpostiosoite on virheellinen");
+        if (!noEmail) {
+            email = StringUtils.trimString(email);
+            EmailValidator validator = EmailValidator.getInstance();
+
+            if (!validator.isValid(email)) {
+                throw new IllegalArgumentException("Sähköpostiosoite on virheellinen");
+            }
         }
         
-        this._email = email;
+        this._email = !noEmail ? email : "";
     }
 
     public int getLevel() {
