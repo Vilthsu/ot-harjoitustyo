@@ -7,4 +7,5 @@
 | 7.4.  | 6    | arkkitehtuurikuvaus & unit testien kirjoitus |
 | 20.4. | 1    | FXML rakentaminen |
 | 21.4. | 6    | sovelluksen logiikan korjaaminen ja käyttölittymä sekä muita vaadittuja asioita kuten kaavio, release tms. |
-| yht   | 17   | | 
+| 28.4. | 2    | Korjauksia domain luokkiin ja UI:n jatkoa |
+| yht   | 19   | | 
