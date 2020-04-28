@@ -6,3 +6,8 @@ Suppeampi versio
 Laajempi versio
 
 ![Laajempi arkkitehtuurikuvaus](https://raw.githubusercontent.com/Vilthsu/ot-harjoitustyo/master/dokumentaatio/kuvat/laajempi-luokka-pakkauskaavio.png)
+
+
+Yksinkertainen sekvenssikaavio kirjautumisesta
+
+![Yksinkertainen sekvenssikaavio kirjautumisesta](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/sekvenssikaavio-login.png)
