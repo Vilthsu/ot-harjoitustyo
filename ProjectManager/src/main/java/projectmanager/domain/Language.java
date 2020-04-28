@@ -3,8 +3,15 @@ package projectmanager.domain;
 import java.util.Objects;
 
 public class Language {
+    /**
+     * Name of language
+     */
     public final String name;
     
+    /**
+     * Creates a new Language instance
+     * @param name A name of language
+     */
     public Language(String name) {
         this.name = name;
     }

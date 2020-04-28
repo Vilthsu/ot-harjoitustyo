@@ -12,42 +12,66 @@ public class User {
     private String _email;
     private final int _level;
     
+    /**
+     * List of user's project
+     */
     public List<Project> projects;
 
+    /**
+     * Creates a new User instance
+     */
     public User() {
         this._level = 1;
         
         projects = new ArrayList<>();
     }
 
+    /**
+     * Creates a new User instance
+     * @param name User's username
+     */
     public User(String name) {
-        this._name = name;
-        this._level = 1;
-        
-        projects = new ArrayList<>();
+        this();
+        this.setName(name);
     }
 
+    /**
+     * Creates a new User instance
+     * @param name User's username
+     * @param email User's email address
+     */
     public User(String name, String email) {
-        this._name = name;
-        this._email = email;
-        this._level = 1;
-        
-        projects = new ArrayList<>();
+        this(name);
+        this.setEmail(email);
     }
 
+    /**
+     * Creates a new User instance
+     * @param name User's username
+     * @param email User's email address
+     * @param level User's level as integer
+     */
     public User(String name, String email, int level) {
-        this._name = name;
-        this._email = email;
+        this.setName(name);
+        this.setEmail(email);
         this._level = level;
         
         projects = new ArrayList<>();
     }
-    
+
+    /**
+     * Gets user's username
+     * @return User's username
+     */
     public String getName() {
         return _name;
     }
-
-    public void setName(String name) throws IllegalArgumentException {
+    /**
+     * Sets and validates user's username
+     * @param name An username
+     * @throws IllegalArgumentException if username is invalid
+     */
+    public final void setName(String name) throws IllegalArgumentException {
         if (name == null) {
             throw new IllegalArgumentException("Käyttäjänimi ei voi olla tyhjä");
         }
@@ -59,11 +83,20 @@ public class User {
         this._name = name;
     }
 
+    /**
+     * Gets user's email address
+     * @return User's email address
+     */
     public String getEmail() {
         return _email;
     }
 
-    public void setEmail(String email) throws IllegalArgumentException {
+    /**
+     * Sets and validates user's email address
+     * @param email An email address
+     * @throws IllegalArgumentException if email address is invalid
+     */
+    public final void setEmail(String email) throws IllegalArgumentException {
         boolean noEmail = email == null || email.trim().length() == 0;
         
         if (!noEmail && !StringUtils.checkLength(email, 5, 35)) {
@@ -82,6 +115,10 @@ public class User {
         this._email = !noEmail ? email : "";
     }
 
+    /**
+     * Gets user's level as integer
+     * @return User's level as integer
+     */
     public int getLevel() {
         return _level;
     }

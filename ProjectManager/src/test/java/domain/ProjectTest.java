@@ -50,7 +50,7 @@ public class ProjectTest {
         
         assertTrue(p.getName() == null);
         assertTrue(p.getDescription() == null);
-        assertTrue(p.author.equals(u));
+        assertTrue(p.getAuthor().equals(u));
     }
     
     @Test
@@ -63,7 +63,7 @@ public class ProjectTest {
         
         assertTrue(p.getName().equals(name));
         assertTrue(p.getDescription().equals(desc));
-        assertTrue(p.author.equals(u));
+        assertTrue(p.getAuthor().equals(u));
     }
     
     @Test
@@ -77,8 +77,8 @@ public class ProjectTest {
         
         assertTrue(p.getName().equals(name));
         assertTrue(p.getDescription().equals(desc));
-        assertTrue(p.author.equals(u));
-        assertTrue(p.created == createdAt);
+        assertTrue(p.getAuthor().equals(u));
+        assertTrue(p.getCreated() == createdAt);
     }
     
     @Test
@@ -89,8 +89,8 @@ public class ProjectTest {
         
         assertTrue(p.getName() == null);
         assertTrue(p.getDescription() == null);
-        assertTrue(p.author == null);
-        assertTrue(p.created == createdAt);
+        assertTrue(p.getAuthor() == null);
+        assertTrue(p.getCreated() == createdAt);
     }
     
     @Test(expected = IllegalArgumentException.class)
@@ -195,7 +195,7 @@ public class ProjectTest {
         project.addLanguage(lang);
         
         String result = project.getName() + ", " + project.getDescription()+ ", tekijä: "
-                + project.author.getName() + ", luotu: " + new Date(created).toString()
+                + project.getAuthor().getName() + ", luotu: " + new Date(created).toString()
                 + ", kielet: C#";
         
         assertEquals(project.toString(), result);

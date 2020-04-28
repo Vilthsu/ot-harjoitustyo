@@ -6,59 +6,78 @@ import java.util.List;
 import projectmanager.utils.StringUtils;
 
 public class Project {
-    public final long created;
-    public final User author;
     
+    private long _created;
+    private User _author = null;
     private String _name;
     private String _description;
     private final List<Language> _languages;
 
+    /**
+     * Creates a new Project instance
+     */
     public Project() {
-        this.created = System.currentTimeMillis();
-        this.author = null;
-        
+        this._created = System.currentTimeMillis();
         _languages = new ArrayList<>();
     }
     
+    /**
+     * Creates a new Project instance
+     * @param author Author user
+     */
     public Project(User author) {
-        this.created = System.currentTimeMillis();
-        this.author = author;
-        
-        _languages = new ArrayList<>();
+        this();
+        this._author = author;
     }
     
+    /**
+     * Creates a new Project instance
+     * @param name Project name
+     * @param description Project description
+     */
     public Project(String name, String description) {
-        this._name = name;
-        this._description = description;
-        this.created = System.currentTimeMillis();
-        this.author = null;
-        
-        _languages = new ArrayList<>();
+        this(null);
+        this.setName(name);
+        this.setDescription(description);
     }
     
+    /**
+     * Creates a new Project instance
+     * @param name Project name
+     * @param description Project description
+     * @param author Author user
+     */
     public Project(String name, String description, User author) {
-        this._name = name;
-        this._description = description;
-        this.created = System.currentTimeMillis();
-        this.author = author;
-        
-        _languages = new ArrayList<>();
+        this(name, description);
+        this._author = author;
     }
     
+    /**
+     * Creates a new Project instance
+     * @param name Project name
+     * @param description Project description
+     * @param created Creation timestamp
+     * @param author Author user
+     */
     public Project(String name, String description, long created, User author) {
-        this._name = name;
-        this._description = description;
-        this.created = created;
-        this.author = author;
-        
-        _languages = new ArrayList<>();
+        this(name, description, author);    
+        this._created = created;
     }
 
+    /**
+     * Gets name of project
+     * @return Name as string
+     */
     public String getName() {
         return _name;
     }
 
-    public void setName(String name) throws IllegalArgumentException {
+    /**
+     * Sets name of project
+     * @param description A name string
+     * @throws IllegalArgumentException if name is invalid
+     */
+    public final void setName(String name) throws IllegalArgumentException {
         if (!StringUtils.checkLength(name, 5, 50)) {
             throw new IllegalArgumentException("Projektin nimen tulee olla 5-50 merkkiä pitkä");
         }
@@ -66,11 +85,20 @@ public class Project {
         this._name = name;
     }
 
+    /**
+     * Returns description of project
+     * @return Description as string
+     */
     public String getDescription() {
         return _description;
     }
 
-    public void setDescription(String description) throws IllegalArgumentException {
+    /**
+     * Sets description of project
+     * @param description A description string
+     * @throws IllegalArgumentException if description is invalid
+     */
+    public final void setDescription(String description) throws IllegalArgumentException {
         if (!StringUtils.checkMaxLength(description, 255)) {
             throw new IllegalArgumentException("Projektin kuvauksen tulee olla korkeintaan 255 merkkiä pitkä");
         }
@@ -78,10 +106,18 @@ public class Project {
         this._description = description;
     }
     
+    /**
+     * Checks if language exists in list of languages
+     * @param language Unique language instance to check
+     */
     public boolean hasLanguage(Language language) {
         return _languages.contains(language);
     }
     
+    /**
+     * Adds language to list of languages
+     * @param language Unique language instance
+     */
     public void addLanguage(Language language) {
         if (this.hasLanguage(language)) {
             return;
@@ -90,6 +126,10 @@ public class Project {
         _languages.add(language);
     }
     
+    /**
+     * Removes language from list of languages
+     * @param language Existing language instance
+     */
     public void removeLanguage(Language language) {
         if (!this.hasLanguage(language)) {
             return;
@@ -98,12 +138,35 @@ public class Project {
         _languages.remove(language);
     }
 
+    /**
+     * Returns list of languages
+     * @return List of languages as List<{@link Language}>
+     */
     public List<Language> getLanguages() {
         return _languages;
     }
 
+    /**
+     * Clears project languages
+     */
     public void clearLanguages() {
         _languages.clear();
+    }
+
+    /**
+     * Returns creation timestamp of project
+     * @return Creation timestamp as long
+     */
+    public long getCreated() {
+        return _created;
+    }
+
+    /**
+     * Returns author of project
+     * @return Author as User object
+     */
+    public User getAuthor() {
+        return _author;
     }
     
     @Override
@@ -118,7 +181,7 @@ public class Project {
         
         String languageStr = String.join(", ", languages);
         
-        return name + ", " + desc + ", tekijä: " + this.author.getName() + ", luotu: "
-                + new Date(created).toString() + ", kielet: " + languageStr;
+        return name + ", " + desc + ", tekijä: " + this._author.getName() + ", luotu: "
+                + new Date(_created).toString() + ", kielet: " + languageStr;
     }
 }
