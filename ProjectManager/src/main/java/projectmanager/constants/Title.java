@@ -6,4 +6,5 @@ public class Title implements IUIConstants {
     public static String REGISTRATION = "Rekisteröidy";
     public static String BROWSE_PROJECTS = "Selaa projekteja";
     public static String MY_PROJECTS = "Omat projektit";
+    public static String ADD_PROJECT = "Luo projekti";
 }

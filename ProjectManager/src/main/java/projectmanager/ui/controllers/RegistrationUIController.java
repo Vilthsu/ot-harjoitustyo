@@ -103,8 +103,6 @@ public class RegistrationUIController implements Initializable, IStackableUI, IC
             errorText.setText(ex.getMessage());
             errorBox.setOpacity(1);
         }
-        
-        System.out.println("ready");
     }
     
     private void validate() throws IllegalArgumentException {

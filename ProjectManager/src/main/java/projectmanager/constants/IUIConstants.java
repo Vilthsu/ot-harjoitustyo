@@ -6,4 +6,5 @@ interface IUIConstants {
     String REGISTRATION = null;
     String BROWSE_PROJECTS = null;
     String MY_PROJECTS = null;
+    String ADD_PROJECT = null;
 }

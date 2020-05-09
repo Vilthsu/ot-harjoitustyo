@@ -5,8 +5,9 @@ import java.util.Date;
 import java.util.List;
 import projectmanager.utils.StringUtils;
 
-public class Project {
+public class Project implements IExampleData, IModel {
     
+    private int _id;
     private long _created;
     private User _author = null;
     private String _name;
@@ -54,6 +55,22 @@ public class Project {
     
     /**
      * Creates a new Project instance
+     * @param id Project ID
+     * @param name Project name
+     * @param description Project description
+     * @param author Author user
+     * @param created Project creation time
+     * @param languages Project languages
+     */
+    public Project(int id, String name, String description, User author, long created, List<Language> languages) {
+        this(name, description, author);
+        this._id = id;
+        this._created = created;
+        this._languages.addAll(languages);
+    }
+    
+    /**
+     * Creates a new Project instance
      * @param name Project name
      * @param description Project description
      * @param created Creation timestamp
@@ -62,6 +79,14 @@ public class Project {
     public Project(String name, String description, long created, User author) {
         this(name, description, author);    
         this._created = created;
+    }
+
+    /**
+     * Gets ID of project
+     * @return ID as integer
+     */
+    public int getID() {
+        return _id;
     }
 
     /**
@@ -74,7 +99,7 @@ public class Project {
 
     /**
      * Sets name of project
-     * @param description A name string
+     * @param name A name string
      * @throws IllegalArgumentException if name is invalid
      */
     public final void setName(String name) throws IllegalArgumentException {
@@ -109,6 +134,7 @@ public class Project {
     /**
      * Checks if language exists in list of languages
      * @param language Unique language instance to check
+     * @return Returns true if given language exists in the list of languages else returns false.
      */
     public boolean hasLanguage(Language language) {
         return _languages.contains(language);
@@ -169,6 +195,14 @@ public class Project {
         return _author;
     }
     
+    /**
+     * Validates required variables and returns result as Boolean.
+     * @return Validation result as Boolean
+     */
+    public boolean isRenderable() {
+        return getName() != null && getDescription() != null;
+    }
+    
     @Override
     public String toString() {
         String name = this.getName();
@@ -183,5 +217,35 @@ public class Project {
         
         return name + ", " + desc + ", tekijä: " + this._author.getName() + ", luotu: "
                 + new Date(_created).toString() + ", kielet: " + languageStr;
+    }
+
+    /**
+     * Creates a new instance of Project with example data.
+     */
+    @Override
+    public void createExampleInstance() {
+        setName("Test example project name");
+        setDescription("Test example project description");
+        _author = new User("Example User");
+        _created = System.currentTimeMillis();
+    }
+
+    /**
+     * Creates a new instance of Project with example data.
+     * @param i Number for the name and desc variables.
+     */
+    @Override
+    public void createExampleInstance(int i) {
+        setName("Test example project name #" + i);
+        setDescription("Test example project description #" + i);
+        _author = new User("Example User");
+        _created = System.currentTimeMillis();
+    }
+
+    @Override
+    public boolean isValid() {
+        return getID() >= 0 &&
+                getName() != null && StringUtils.checkLength(getName(), 5, 50)
+                && getDescription() != null && StringUtils.checkMaxLength(getDescription(), 255);
     }
 }

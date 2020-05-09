@@ -7,10 +7,11 @@ import org.apache.commons.validator.EmailValidator;
 import projectmanager.utils.StringUtils;
 import projectmanager.utils.UserUtils;
 
-public class User {
+public class User implements IModel, IExampleData {
+    private int _id;
     private String _name;
     private String _email;
-    private final int _level;
+    private int _level;
     
     /**
      * List of user's project
@@ -52,11 +53,32 @@ public class User {
      * @param level User's level as integer
      */
     public User(String name, String email, int level) {
-        this.setName(name);
-        this.setEmail(email);
+        this(name, email);
         this._level = level;
         
         projects = new ArrayList<>();
+    }
+
+    /**
+     * Creates a new User instance
+     * @param id User ID
+     * @param name User's username
+     * @param email User's email address
+     * @param level User's level as integer
+     */
+    public User(int id, String name, String email, int level) {
+        this(name, email, level);
+        this._id = id;
+        
+        projects = new ArrayList<>();
+    }
+
+    /**
+     * Gets user's id
+     * @return User's id
+     */
+    public int getId() {
+        return _id;
     }
 
     /**
@@ -152,5 +174,26 @@ public class User {
         String level = UserUtils.userFriendlyLevel(this);
         
         return name + " [" + level + "]";
+    }
+
+    @Override
+    public void createExampleInstance() {
+        setName("Example user");
+        setEmail("example.user@provider.com");
+    }
+
+    @Override
+    public void createExampleInstance(int i) {
+        _id = i;
+        setName("User #" + i);
+        setEmail("example.user" + i + "@provider.com");
+    }
+
+    @Override
+    public boolean isValid() {
+        return getId() > 0
+                && getName() != null && StringUtils.checkLength(getName(), 5, 15)
+                && getEmail() == null || (getEmail() != null && StringUtils.checkLength(getEmail(), 5, 35))
+                && getLevel() >= 0;
     }
 }

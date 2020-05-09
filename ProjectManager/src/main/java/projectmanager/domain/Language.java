@@ -2,7 +2,11 @@ package projectmanager.domain;
 
 import java.util.Objects;
 
-public class Language {
+public class Language implements IModel {
+    /**
+     * ID of language
+     */
+    public final int id;
     /**
      * Name of language
      */
@@ -13,6 +17,16 @@ public class Language {
      * @param name A name of language
      */
     public Language(String name) {
+        this(0, name);
+    }
+    
+    /**
+     * Creates a new Language instance
+     * @param id An ID of language
+     * @param name A name of language
+     */
+    public Language(int id, String name) {
+        this.id = id;
         this.name = name;
     }
 
@@ -36,5 +50,10 @@ public class Language {
         }
         final Language other = (Language) obj;
         return Objects.equals(this.name, other.name);
+    }
+
+    @Override
+    public boolean isValid() {
+        return name != null && name.trim().length() > 0;
     }
 }

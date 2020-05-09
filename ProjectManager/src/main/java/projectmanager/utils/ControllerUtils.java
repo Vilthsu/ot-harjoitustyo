@@ -3,10 +3,12 @@ package projectmanager.utils;
 import java.io.IOException;
 import java.net.URL;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import projectmanager.ui.IStackableUI;
+import projectmanager.ui.Main;
 
 public class ControllerUtils {
     /**
@@ -35,7 +37,7 @@ public class ControllerUtils {
      * @param path Path of FXML file
      * @throws java.io.IOException
      */
-    public static <T extends IStackableUI> void loadController(Stage stage, Class<?> obj, String path) throws IOException {
+    public static <T extends Initializable> void loadController(Stage stage, Class<?> obj, String path) throws IOException {
         ControllerUtils.loadController(stage, obj.getResource(path));
     }
 }

@@ -30,7 +30,8 @@ public class ProjectManagerUI extends Application {
     }
     
     public void openLogin(Stage stage) throws IOException {
-        openController(stage, FXMLPath.LOGIN);
+        // openController(stage, FXMLPath.LOGIN);
+        openController(stage, FXMLPath.BROWSE_PROJECTS);
     }
     
     public void openController(Stage stage, String path) throws IOException {
