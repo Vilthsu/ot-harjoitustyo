@@ -166,7 +166,7 @@ public class Project implements IExampleData, IModel {
 
     /**
      * Returns list of languages
-     * @return List of languages as List<{@link Language}>
+     * @return List of languages as List&lt;{@link Language}&gt;
      */
     public List<Language> getLanguages() {
         return _languages;

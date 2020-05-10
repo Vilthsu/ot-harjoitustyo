@@ -11,7 +11,7 @@ public abstract class Dao<T, K> implements IDao<T, K>, IConnectable {
     /**
      * Opens a new connection to the database
      * @return Connection object or null if DatabaseConnection is null.
-     * @throws SQLException
+     * @throws SQLException If open operation fails
      */
     @Override
     public Connection openConnection() throws SQLException {
@@ -25,7 +25,7 @@ public abstract class Dao<T, K> implements IDao<T, K>, IConnectable {
     /**
      * Closes given connection
      * @param conn Connection to close
-     * @throws SQLException 
+     * @throws SQLException If open operation fails
      */
     @Override
     public void closeConnection(Connection conn) throws SQLException {

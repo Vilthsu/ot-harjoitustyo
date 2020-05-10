@@ -1,8 +1,8 @@
 package domain;
 
+import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 import projectmanager.domain.Project;
 import projectmanager.domain.User;
 import projectmanager.utils.UserUtils;
@@ -122,8 +122,8 @@ public class UserTest {
     public void usersAreEqual() {
         String name = "User name";
         
-        User user1 = new User(name);
-        User user2 = new User(name);
+        User user1 = new User(1, name, null, 1);
+        User user2 = new User(1, name, null, 1);
         
         assertTrue(user1.equals(user2));
     }
@@ -133,8 +133,8 @@ public class UserTest {
         String name = "User name";
         String name2 = "Käyttäjä";
         
-        User user1 = new User(name);
-        User user2 = new User(name2);
+        User user1 = new User(1, name, null, 1);
+        User user2 = new User(2, name2, null, 1);
         
         assertFalse(user2.equals(user1));
     }

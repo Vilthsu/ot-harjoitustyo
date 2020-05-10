@@ -15,7 +15,7 @@ public class ControllerUtils {
      * @param <T> Type of controller
      * @param stage Primary stage
      * @param path Path of FXML file
-     * @throws java.io.IOException
+     * @throws java.io.IOException If FXMLLoader fails
      */
     public static <T extends IStackableUI> void loadController(Stage stage, URL path) throws IOException {
         FXMLLoader loader = new FXMLLoader(path);
@@ -34,7 +34,7 @@ public class ControllerUtils {
      * @param stage Primary stage
      * @param obj Class for resource loader. Usually same class where this method is called.
      * @param path Path of FXML file
-     * @throws java.io.IOException
+     * @throws java.io.IOException If FXMLLoader fails
      */
     public static <T extends Initializable> void loadController(Stage stage, Class<?> obj, String path) throws IOException {
         ControllerUtils.loadController(stage, obj.getResource(path));

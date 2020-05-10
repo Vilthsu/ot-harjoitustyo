@@ -211,6 +211,8 @@ public class BrowseProjectsUIController extends ListUIBaseController {
             projectService.joinProject(selectedProject);
         } catch (SQLException ex) {
             AlertUtils.showErrorAlert("Tapahtui virhe liityttäessä projektiin.");
+        } finally {
+            quickRefreshUserProjects();
         }
     }
 
@@ -220,6 +222,8 @@ public class BrowseProjectsUIController extends ListUIBaseController {
             projectService.leaveProject(selectedProject);
         } catch (SQLException ex) {
             AlertUtils.showErrorAlert("Tapahtui virhe poistuttaessa projektista.");
+        } finally {
+            quickRefreshUserProjects();
         }
     }
 
@@ -235,6 +239,16 @@ public class BrowseProjectsUIController extends ListUIBaseController {
             projectService.delete(selectedProject);
         } catch (SQLException ex) {
             AlertUtils.showErrorAlert("Tapahtui virhe poistettaessa projektista.");
+        } finally {
+            quickRefreshUserProjects();
+        }
+    }
+    
+    private void quickRefreshUserProjects() {
+        try {
+            initUserProjects();
+        } catch (SQLException ex) {
+            AlertUtils.showErrorAlert("Tapahtui virhe virkistettäessä omia projekteja.");
         }
     }
 

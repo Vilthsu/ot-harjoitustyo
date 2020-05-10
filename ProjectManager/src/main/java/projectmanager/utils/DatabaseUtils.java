@@ -2,14 +2,14 @@ package projectmanager.utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Scanner;
 import projectmanager.constants.DatabaseProps;
 import projectmanager.dao.DatabaseConnection;
 
@@ -67,9 +67,9 @@ public class DatabaseUtils {
     }
     
     public static boolean initDatabaseFromResources(String templatePath) throws ClassNotFoundException, SQLException, URISyntaxException, IOException {
-        URL url = DatabaseUtils.class.getResource(templatePath);
+        InputStream stream = DatabaseUtils.class.getResourceAsStream(templatePath);
         
-        if (url == null || DatabaseProps.defaultConnectionString == null) {
+        if (stream == null || DatabaseProps.defaultConnectionString == null) {
             return false;
         }
         
@@ -77,16 +77,16 @@ public class DatabaseUtils {
         
         Connection connection = dbConnection.getConnectionObject();
         
-        File file = new File(url.toURI());
+        Scanner scanner = new Scanner(stream);
+        StringBuilder builder = new StringBuilder();
         
-        if (!file.exists()) {
-            return false;
+        while(scanner.hasNext()){
+           builder.append(scanner.nextLine());
         }
         
         Statement stmt = connection.createStatement();
         
-        Path path = file.toPath();
-        String content = Files.readString(path);
+        String content = builder.toString();
         
         stmt.executeUpdate(content);
         

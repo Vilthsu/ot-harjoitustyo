@@ -158,7 +158,7 @@ public class User implements IModel, IExampleData {
         }
         final User other = (User) obj;
         
-        return Objects.equals(this._name, other.getName());
+        return Objects.equals(this._id, other.getId());
     }
 
     @Override
