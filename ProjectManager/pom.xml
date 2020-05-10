@@ -85,9 +85,9 @@
                                 </transformer>
                             </transformers>
                             
-                            <!-- Fix, source: https://stackoverflow.com/a/24749717 -->
+                            <!-- Fix, source: https://stackoverflow.com/a/24749717
                             <shadedArtifactAttached>true</shadedArtifactAttached>
-                            <shadedClassifierName>launcher</shadedClassifierName>
+                            <shadedClassifierName>launcher</shadedClassifierName> -->
                         </configuration>
                     </execution>
                 </executions>
