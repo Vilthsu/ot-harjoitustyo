@@ -2,10 +2,9 @@ package projectmanager.ui.controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.Map;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -17,9 +16,11 @@ import javafx.stage.Stage;
 import projectmanager.constants.FXMLPath;
 import projectmanager.constants.Title;
 import projectmanager.domain.User;
+import projectmanager.services.UserService;
 import projectmanager.ui.Form;
 import projectmanager.ui.IController;
 import projectmanager.ui.IStackableUI;
+import projectmanager.utils.AlertUtils;
 import projectmanager.utils.ControllerUtils;
 import projectmanager.utils.StageUtils;
 
@@ -42,8 +43,10 @@ public class RegistrationUIController implements Initializable, IStackableUI, IC
     
     private Form _form;
     
+    protected UserService userService;
+
     public RegistrationUIController() {
-        
+        userService = new UserService();
     }
     
     @Override
@@ -85,7 +88,7 @@ public class RegistrationUIController implements Initializable, IStackableUI, IC
         try {
             ControllerUtils.loadController(_stage, getClass(), FXMLPath.LOGIN);
         } catch (IOException ex) {
-            Logger.getLogger(LoginUIController.class.getName()).log(Level.SEVERE, null, ex);
+            AlertUtils.showErrorAlert("Tapahtui virhe avattaessa kirjautumisnäkymää.");
         }
     }
     
@@ -99,6 +102,7 @@ public class RegistrationUIController implements Initializable, IStackableUI, IC
         try {
             validate();
             errorBox.setOpacity(0);
+            registrationOperation();
         } catch (IllegalArgumentException ex) {
             errorText.setText(ex.getMessage());
             errorBox.setOpacity(1);
@@ -124,5 +128,28 @@ public class RegistrationUIController implements Initializable, IStackableUI, IC
         if (password.trim().length() < 8 || password2.trim().length() < 8) {
             throw new IllegalArgumentException("Salasanan tulee olla vähintään kahdeksan (8) merkkiä pitkä");
         }
+    }
+    
+    private void registrationOperation() {
+        Map<String, String> values = _form.getValues();
+
+        String username = values.get("username");
+        String email = values.get("email");
+        String password = values.get("password");
+        
+        try {
+            userService.create(username, email, password);
+            onRegistrationSuccess();
+        } catch (IllegalArgumentException ex) {
+            errorText.setText(ex.getMessage());
+            errorBox.setOpacity(1);
+        } catch (SQLException ex) {
+            throw new IllegalArgumentException("Tuntematon virhe!");
+        }
+    }
+    
+    private void onRegistrationSuccess() {
+        AlertUtils.showInformationAlert("Rekisteröityminen onnistui! Voit nyt kirjautua sisään.");
+        openLogin();
     }
 }

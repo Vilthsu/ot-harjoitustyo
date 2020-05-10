@@ -112,7 +112,7 @@ public class User implements IModel, IExampleData {
     public String getEmail() {
         return _email;
     }
-
+    
     /**
      * Sets and validates user's email address
      * @param email An email address

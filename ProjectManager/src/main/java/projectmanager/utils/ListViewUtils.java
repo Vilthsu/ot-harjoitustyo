@@ -6,7 +6,6 @@ import javafx.collections.FXCollections;
 import javafx.scene.control.ListView;
 import projectmanager.domain.IExampleData;
 
-
 public class ListViewUtils {
     /**
      * Development purposes only!

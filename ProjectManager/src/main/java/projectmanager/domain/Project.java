@@ -241,11 +241,28 @@ public class Project implements IExampleData, IModel {
         _author = new User("Example User");
         _created = System.currentTimeMillis();
     }
-
+    
     @Override
     public boolean isValid() {
         return getID() >= 0 &&
                 getName() != null && StringUtils.checkLength(getName(), 5, 50)
                 && getDescription() != null && StringUtils.checkMaxLength(getDescription(), 255);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        super.equals(obj);
+        
+        if (obj == null) {
+            return false;
+        }
+        
+        if (!obj.getClass().equals(getClass())) {
+            return false;
+        }
+        
+        Project p = (Project)obj;
+        
+        return p.getID() == getID();
     }
 }

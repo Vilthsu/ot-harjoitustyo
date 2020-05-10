@@ -4,13 +4,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Map;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -20,9 +16,12 @@ import javafx.stage.Stage;
 import projectmanager.constants.FXMLPath;
 import projectmanager.constants.Title;
 import projectmanager.domain.User;
+import projectmanager.services.SessionService;
+import projectmanager.services.UserService;
 import projectmanager.ui.Form;
 import projectmanager.ui.IController;
 import projectmanager.ui.IStackableUI;
+import projectmanager.utils.AlertUtils;
 import projectmanager.utils.ControllerUtils;
 import projectmanager.utils.StageUtils;
 
@@ -31,16 +30,18 @@ public class LoginUIController implements Initializable, IStackableUI, IControll
     private Stage _stage;
 
     @FXML
-    private TextField usernameField;
+    protected TextField usernameField;
     @FXML
-    private PasswordField passwordField;
+    protected PasswordField passwordField;
     @FXML
-    private VBox errorBox;
+    protected VBox errorBox;
 
     private Form _form;
+    
+    protected UserService userService;
 
     public LoginUIController() {
-
+        userService = new UserService();
     }
 
     @Override
@@ -89,7 +90,7 @@ public class LoginUIController implements Initializable, IStackableUI, IControll
         try {
             ControllerUtils.loadController(_stage, getClass(), path);
         } catch (IOException ex) {
-            Logger.getLogger(LoginUIController.class.getName()).log(Level.SEVERE, null, ex);
+            AlertUtils.showErrorAlert("Tapahtui virhe avatessa uutta näkymää.");
         }
     }
 
@@ -107,9 +108,26 @@ public class LoginUIController implements Initializable, IStackableUI, IControll
         try {
             validate();
             errorBox.setOpacity(0);
-            openBrowseProjects();
+            loginOperation();
         } catch (IllegalArgumentException ex) {
             errorBox.setOpacity(1);
+        }
+    }
+    
+    private void loginOperation() {
+        Map<String, String> values = _form.getValues();
+
+        String username = values.get("username");
+        String password = values.get("password");
+        
+        try {
+            userService.login(username, password);
+        } catch (IllegalArgumentException ex) {
+            errorBox.setOpacity(1);
+        } finally {
+            if (SessionService.isLoggedIn()) {
+                onLoginSuccess();
+            }
         }
     }
 
@@ -132,5 +150,9 @@ public class LoginUIController implements Initializable, IStackableUI, IControll
         if (password == null || password.trim().length() < 8) {
             throw new IllegalArgumentException();
         }
+    }
+    
+    private void onLoginSuccess() {
+        openBrowseProjects();
     }
 }

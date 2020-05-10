@@ -6,12 +6,22 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import projectmanager.constants.DatabaseProps;
 import projectmanager.domain.Language;
 
 public class LanguageDao extends Dao<Language, Integer> {
     
     public LanguageDao(DatabaseConnection connection) {
         this.connection = connection;
+        this.table = "language";
+    }
+    
+    public LanguageDao(String connection) throws ClassNotFoundException {
+        this(new DatabaseConnection(connection));
+    }
+    
+    public LanguageDao() throws ClassNotFoundException {
+        this(DatabaseProps.defaultConnectionString);
     }
     
     @Override
@@ -22,7 +32,7 @@ public class LanguageDao extends Dao<Language, Integer> {
         
         Connection conn = openConnection();
         
-        PreparedStatement stmt = conn.prepareStatement("INSERT INTO language (name) VALUES (?)");
+        PreparedStatement stmt = conn.prepareStatement("INSERT INTO " + this.table + " (name) VALUES (?)");
         stmt.setString(1, language.name);
         
         boolean status = stmt.execute();
@@ -36,7 +46,7 @@ public class LanguageDao extends Dao<Language, Integer> {
     public Language read(Integer id) throws SQLException {
         Connection conn = openConnection();
         
-        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM language WHERE id = ? LIMIT 1");
+        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM " + this.table + " WHERE id = ? LIMIT 1");
         stmt.setInt(1, id);
         
         ResultSet result = stmt.executeQuery();
@@ -60,7 +70,7 @@ public class LanguageDao extends Dao<Language, Integer> {
         
         Connection conn = openConnection();
         
-        PreparedStatement stmt = conn.prepareStatement("UPDATE language SET name = ? WHERE id = ?");
+        PreparedStatement stmt = conn.prepareStatement("UPDATE " + this.table + " SET name = ? WHERE id = ?");
         stmt.setString(1, language.name);
         stmt.setInt(2, language.id);
         
@@ -79,7 +89,7 @@ public class LanguageDao extends Dao<Language, Integer> {
         
         Connection conn = openConnection();
         
-        PreparedStatement stmt = conn.prepareStatement("DELETE FROM language WHERE id = ?");
+        PreparedStatement stmt = conn.prepareStatement("DELETE FROM " + this.table + " WHERE id = ?");
         stmt.setInt(1, id);
         
         boolean status = stmt.execute();
@@ -93,7 +103,7 @@ public class LanguageDao extends Dao<Language, Integer> {
     public List<Language> list() throws SQLException {
         Connection conn = openConnection();
         
-        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM language");
+        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM " + this.table);
         
         ResultSet result = stmt.executeQuery();
         

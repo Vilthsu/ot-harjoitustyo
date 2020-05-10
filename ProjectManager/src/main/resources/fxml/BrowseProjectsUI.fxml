@@ -11,79 +11,84 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectmanager.ui.controllers.BrowseProjectsUIController">
-   <children>
-      <MenuBar>
-        <menus>
-          <Menu mnemonicParsing="false" text="Tiedosto">
-            <items>
-              <MenuItem fx:id="terminateApp" mnemonicParsing="false" onAction="#handleTerminateAppRequest" text="Sulje" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Ohje">
-            <items>
-              <MenuItem fx:id="guideBtn" mnemonicParsing="false" onAction="#handleGuideRequest" text="Käyttöohje" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-      <AnchorPane VBox.vgrow="ALWAYS">
-         <children>
-            <TabPane maxHeight="1.7976931348623157E308" prefHeight="360.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-              <tabs>
-                <Tab text="Selaa projekteja">
-                     <content>
-                        <AnchorPane>
-                           <children>
-                              <SplitPane dividerPositions="0.75" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="319.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <items>
-                                    <AnchorPane>
-                                       <children>
-                                          <ListView id="projectList" fx:id="allProjectsList" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="400.0" prefWidth="464.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                       </children>
-                                    </AnchorPane>
-                                    <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="100.0">
-                                       <children>
-                                          <Button layoutX="38.0" layoutY="155.0" mnemonicParsing="false" text="Poista projekti" />
-                                          <Button layoutX="38.0" layoutY="186.0" mnemonicParsing="false" text="Liity projektiin" />
-                                          <Button layoutX="38.0" layoutY="218.0" mnemonicParsing="false" text="Poistu projektista" />
-                                       </children>
-                                    </VBox>
-                                 </items>
-                              </SplitPane>
-                           </children>
-                        </AnchorPane>
-                     </content>
-                </Tab>
-                <Tab text="Omat projektit">
-                     <content>
-                        <AnchorPane>
-                           <children>
-                              <SplitPane dividerPositions="0.75" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <items>
-                                    <AnchorPane>
-                                       <children>
-                                          <ListView id="projectList" fx:id="myProjectsList" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="464.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                       </children>
-                                    </AnchorPane>
-                                    <VBox maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                                       <children>
-                                          <Button layoutX="38.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleNewButtonClick" text="Uusi projekti" />
-                                          <Button layoutX="38.0" layoutY="186.0" mnemonicParsing="false" text="Poista projekti" />
-                                          <Button layoutX="38.0" layoutY="218.0" mnemonicParsing="false" text="Määritä julkiseksi" />
-                                          <Button mnemonicParsing="false" text="Määritä yksityiseksi" />
-                                          <Button mnemonicParsing="false" text="Poistu projektista" />
-                                       </children>
-                                    </VBox>
-                                 </items>
-                              </SplitPane>
-                           </children>
-                        </AnchorPane>
-                     </content>
-                </Tab>
-              </tabs>
-            </TabPane>
-         </children>
-      </AnchorPane>
-   </children>
-</VBox>
+<AnchorPane fx:id="rootPane" prefHeight="320.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectmanager.ui.controllers.BrowseProjectsUIController">
+    <children>
+        <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Tiedosto">
+                            <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleLogoutRequest" text="Kirjaudu ulos" />
+                                <MenuItem fx:id="terminateApp" mnemonicParsing="false" onAction="#handleTerminateAppRequest" text="Sulje" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Ohje">
+                            <items>
+                                <MenuItem fx:id="guideBtn" mnemonicParsing="false" onAction="#handleGuideRequest" text="Käyttöohje" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <AnchorPane VBox.vgrow="ALWAYS">
+                    <children>
+                        <TabPane maxHeight="1.7976931348623157E308" prefHeight="360.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <tabs>
+                                <Tab fx:id="browseAllProjectsTab" text="Selaa projekteja">
+                                    <content>
+                                        <AnchorPane>
+                                            <children>
+                                                <SplitPane dividerPositions="0.75" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="319.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                    <items>
+                                                        <AnchorPane>
+                                                            <children>
+                                                                <ListView id="projectList" fx:id="allProjectsList" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="400.0" prefWidth="464.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                            </children>
+                                                        </AnchorPane>
+                                                        <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="100.0">
+                                                            <children>
+                                                                <Button fx:id="deleteProjectBtn" layoutX="38.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleDeleteProjectAction" text="Poista projekti" />
+                                                                <Button fx:id="joinProjectBtn" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#handleJoinProjectAction" text="Liity projektiin" />
+                                                                <Button fx:id="leaveProjectBtn" layoutX="38.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleLeaveProjectAction" text="Poistu projektista" />
+                                                            </children>
+                                                        </VBox>
+                                                    </items>
+                                                </SplitPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </Tab>
+                                <Tab fx:id="myProjectsTab" text="Omat projektit">
+                                    <content>
+                                        <AnchorPane>
+                                            <children>
+                                                <SplitPane dividerPositions="0.75" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                    <items>
+                                                        <AnchorPane>
+                                                            <children>
+                                                                <ListView id="projectList" fx:id="myProjectsList" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="464.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                            </children>
+                                                        </AnchorPane>
+                                                        <VBox maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                            <children>
+                                                                <Button layoutX="38.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleNewButtonClick" text="Uusi projekti" />
+                                                                <Button fx:id="deleteMyProjectBtn" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#handleDeleteProjectAction" text="Poista projekti" />
+                                                                <Button fx:id="leaveMyProjectBtn" mnemonicParsing="false" onAction="#handleLeaveProjectAction" text="Poistu projektista" />
+                                                                <Button layoutX="38.0" layoutY="218.0" mnemonicParsing="false" text="Määritä julkiseksi" visible="false" />
+                                                                <Button mnemonicParsing="false" text="Määritä yksityiseksi" visible="false" />
+                                                            </children>
+                                                        </VBox>
+                                                    </items>
+                                                </SplitPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </Tab>
+                            </tabs>
+                        </TabPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

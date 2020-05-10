@@ -1,15 +1,12 @@
 package projectmanager.ui.components;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.ListCell;
 import static projectmanager.constants.FXMLPath.PROJECT_LIST_ITEM;
 import projectmanager.domain.Project;
 import projectmanager.ui.controllers.ProjectListItemController;
-import projectmanager.utils.ControllerUtils;
 
 
 public class ProjectListItemComponent extends ListCell<Project> {
