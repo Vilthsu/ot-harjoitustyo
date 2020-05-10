@@ -8,4 +8,8 @@
 | 20.4. | 1    | FXML rakentaminen |
 | 21.4. | 6    | sovelluksen logiikan korjaaminen ja käyttölittymä sekä muita vaadittuja asioita kuten kaavio, release tms. |
 | 28.4. | 2    | Korjauksia domain luokkiin ja UI:n jatkoa |
-| yht   | 19   | | 
+| 7.5.  | 4    | Jatkoa mm. selausikkunoiden aloitus
+| 8.5.  | 12   | Listojen konfiguraatio, projektin luomislomake, vikasietokyvyn parannusta, "manuaalista ui testausta"...
+| 9.5.  | 6    | Tietokannan integrointia, domain luokkien apurajapintojen teko ym.
+| 10.5. | 11   | Lyhyen käyttöohjeen kirjoitusta, JavaFX versio warningin korjaus, UI korjausta, loppupalautus release ym.
+| yht   | 53   | | 
