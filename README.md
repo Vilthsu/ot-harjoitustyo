@@ -16,6 +16,8 @@ Sovellus on Helsingin yliopiston Tietojenkäsittelytieteen kurssin Ohjelmistotek
 
 [Työaikakirjanpito](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+[Toteutumattomat ominaisuudet](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/toteutumattomat-ominaisuudet.md)
+
 ## Releaset
 Viimeisin on listan kärjessä, toisin sanoen releaset ovat laskevassa järjestyksessä julkaisuajan mukaan.
 
