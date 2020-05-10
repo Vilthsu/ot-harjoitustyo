@@ -12,11 +12,14 @@ Sovellus on Helsingin yliopiston Tietojenkäsittelytieteen kurssin Ohjelmistotek
 
 [Testausdokumentti](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
+[Käyttöohje](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/kaytto-ohje.md)
+
 [Työaikakirjanpito](https://github.com/Vilthsu/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 ## Releaset
 Viimeisin on listan kärjessä, toisin sanoen releaset ovat laskevassa järjestyksessä julkaisuajan mukaan.
 
+- [v0.2-alpha](https://github.com/Vilthsu/ot-harjoitustyo/releases/tag/v0.2-alpha) - Loppupalautus kurssille su 10.5.2020.
 - [v0.1.1-alpha](https://github.com/Vilthsu/ot-harjoitustyo/releases/tag/v0.1.1-alpha) - Korjausrelease viikon viisi releaseen.
 - [v0.1-alpha](https://github.com/Vilthsu/ot-harjoitustyo/releases/tag/v0.1-alpha) - Ensimmäinen vaadittu release viikolla viisi.
 
