@@ -4,6 +4,8 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.Map;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -15,7 +17,9 @@ import javafx.stage.Stage;
 import projectmanager.constants.Title;
 import projectmanager.domain.Language;
 import projectmanager.domain.Project;
+import projectmanager.domain.User;
 import projectmanager.services.ProjectService;
+import projectmanager.services.SessionService;
 import projectmanager.ui.Form;
 import projectmanager.ui.IController;
 import projectmanager.ui.IStackableUI;
@@ -82,6 +86,14 @@ public class ProjectFormUIController implements Initializable, IStackableUI, ICo
             return;
         }
 
+        try {
+            User user = SessionService.getLoggedUser();
+            user.projects = projectService.listAll(user);
+
+        } catch (SQLException ex) {
+            Logger.getLogger(ProjectFormUIController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         _stage.close();
     }
 
